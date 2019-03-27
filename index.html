@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Forecast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/3.1.0/system.js"></script>
+</head>
+<body>
+    <h1>Weather Forecast</h1>
+
+    <form data-behaviour="location-input">
+        <label for="location">City
+            <input id="location" data-id="location" type="text" autofocus autocomplete="off" required placeholder="enter city name">
+        </label>
+        <button data-id="show-weather">Show Weather</button>
+    </form>
+
+    <div data-behaviour="weather-output"></div>
+
+    <script type="module" src="script.js">
+        // System.import('./script.js');
+    </script>
+
+</body>
+</html>
